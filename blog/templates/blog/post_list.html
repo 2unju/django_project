@@ -1,6 +1,11 @@
 <html>
     <head>
         <title>Django Girls blog</title>
+        <script>
+          $.ajaxSetup({
+            headers: { "X-CSRFToken": '{{csrf_token}}' }
+          });
+        </script>
     </head>
     <body>
         <div>
